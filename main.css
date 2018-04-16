@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+body {
+    background-image: url('./img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* background-position: center; */
+    background-size: cover;
+}
+
+ul, a {
+    color:white;
+}
+
+ul:hover, a:hover {
+    color:#fed136;
+}
+
+.start-bootstrap {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1em;
+    margin: 4px 0px 0px 6px;
+    color: #fed136;
+}
+
+.start-bootstrap:hover {
+    color: #ffc107;
+    transition: .5s;
+}
+
+.menuBtn {
+    width: 50px;
+    height: 25px;
+    background-color:#fed136;
+    color: white;
+    display: none;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.main-header {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: stretch;
+    padding: 20px;
+}
+
+.desktop-nav ul a {
+    display: inline-block;
+    
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    padding: 10px;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+
+@media(min-width: 750px) {
+    .start-bootstrap {
+        font-size: 1.5em;
+    }
+    .menuBtn {
+        display: block;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    
+    
+}
+
+@media(min-width: 950px) {
+    .start-bootstrap {
+        font-size: 2em;
+    }
+
+    .menuBtn {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: block;
+    }
+}
